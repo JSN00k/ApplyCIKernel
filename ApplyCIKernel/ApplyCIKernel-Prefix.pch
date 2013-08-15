@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ApplyCIKernel' target in the 'ApplyCIKernel' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif
