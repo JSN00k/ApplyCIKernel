@@ -210,8 +210,8 @@ int main(int argc, const char * argv[])
   CIImage *outputImage = [filter valueForKey:kCIOutputImageKey];
   CGImageRef result = [ciCtx createCGImage:outputImage
                                   fromRect:CGRectMake (0.0, 0.0,
-                                                       786,
-                                                       564)];
+                                                       imageSize.width,
+                                                       imageSize.height)];
   free (data);
   
   NSURL *destination = [NSURL fileURLWithPath:[[NSString stringWithUTF8String:argv[i]] stringByStandardizingPath]];

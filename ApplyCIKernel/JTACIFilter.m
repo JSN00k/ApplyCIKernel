@@ -21,9 +21,12 @@
     arguments = [NSMutableArray array];
     NSError *error = nil;
     NSString *fullName = [kernelFile stringByExpandingTildeInPath];
+    NSLog (@"Making CIKernel");
+    NSLog (@"Kernel Syntax Errors:");
     NSArray *kernels = [CIKernel kernelsWithString:[NSString stringWithContentsOfFile:fullName
                                                                              encoding:NSUTF8StringEncoding
                                                                                 error:&error]];
+    NSLog (@"Finished making CIKernel");
     if (error) {
       printf ("couldn't read the CIKernel file");
       return nil;
