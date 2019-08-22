@@ -1,7 +1,3 @@
-# README #
-
-You can download this using this [link](https://bitbucket.org/James_Snook/applycikernel/get/8381bfb51a54.zip) or clone the repository using Mercurial `hg clone https://bitbucket.org/James_Snook/applycikernel`
-
 ### What is this repository for? ###
 
 This repository builds a command line tool for applying a CIKernel to an image. It is useful for testing any CIKernels you've written without having to have a larger project around them, or applying a CIKernel without having to write any other code.
